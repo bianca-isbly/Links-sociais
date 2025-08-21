@@ -206,8 +206,8 @@ footer {
   background-color: #ffffffdd;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  font-family: 'Inter', sans-serif;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Inter", sans-serif;
   animation: popIn 0.5s ease;
   z-index: 1000;
 }
@@ -230,15 +230,23 @@ footer {
 #overlay {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 900;
 }
 
 @keyframes popIn {
-  from { opacity: 0; transform: translate(-50%, -60%); }
-  to { opacity: 1; transform: translate(-50%, -50%); }
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Letras visíveis apenas no modo escuro */
@@ -253,4 +261,3 @@ html:not(.Light) .pop-up {
   font-weight: normal; /* opcional, se não quiser que fique bold */
   font-size: 8px; /* opcional, para deixar menor */
 }
-/*Ass. Bianca Isabely*/

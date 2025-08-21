@@ -59,4 +59,3 @@ btnFechar.addEventListener("click", () => {
   som.pause()
   som.currentTime = 0
 })
-/*Ass. Bianca Isabely*/
