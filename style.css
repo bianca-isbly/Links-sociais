@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -34,7 +35,7 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 330px;
   max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
@@ -132,9 +133,7 @@ ul li :hover {
 #social-links {
   display: flex;
   justify-content: center;
-
-  padding: 24px 0;
-
+  /* padding: 24px 0; > espaço entre os botões das redes sociais com a lista e rodapé */
   font-size: 40px;
 }
 
@@ -157,4 +156,15 @@ footer {
   padding: 24px 0;
   text-align: center;
   line-height: 1.5;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .Light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
